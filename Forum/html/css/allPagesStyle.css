@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+/* Хэдер */
+header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 1320px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.logo{
+    width: 200px;
+    height: 60px;
+    background-color: aliceblue;
+}
+.logo h1{
+    text-align: center;
+    line-height: 60px;
+}
+.funcButtons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.button{
+    height: 40px;
+    background-color: green;
+    margin: 5px;
+    color: white;
+    padding: 10px 13px;
+    border-radius: 15px;
+}
+
+/* Главная секция */
+main{
+    width: 100vw;
+    border: 1px solid black;
+}
+#mainList{
+    width: 900px;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.block{
+    width: 850px;
+    height: 60px;
+    border: 1px solid green;
+}
