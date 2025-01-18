@@ -47,13 +47,43 @@ header .container{
 /* Главная секция */
 main{
     width: 100vw;
-    border: 1px solid black;
 }
-#mainList{
+.list{
     width: 900px;
     border: 1px solid red;
     margin: 0 auto;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+
+}
+.list_content.hide{
+    display: none;
+    overflow: hidden;
+}
+.list_Header{
+    width: 100%;
+    height: 65px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    margin-left: calc((65px - 35px)/2);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.list_Header h1{
+    margin-left: calc((65px - 35px)/2);
+}
+.list_content{
+    display: block;
+    position: relative;
 }
 .block{
     width: 850px;
