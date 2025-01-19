@@ -56,12 +56,20 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-
-
 }
-.list_content.hide{
-    display: none;
+.list_content {
+    display: block;
+    position: relative;
+    max-height: 500px;
     overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.list_content.hide {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 .list_Header{
     width: 100%;
@@ -81,10 +89,10 @@ main{
 .list_Header h1{
     margin-left: calc((65px - 35px)/2);
 }
-.list_content{
+/* .list_content{
     display: block;
     position: relative;
-}
+} */
 .block{
     width: 850px;
     height: 60px;
